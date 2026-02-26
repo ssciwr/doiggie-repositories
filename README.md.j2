@@ -15,7 +15,7 @@ by depending on this package.
 ## List of available data repository implementations
 
 | Name | Homepage | Full Support | Allows Self Hosting | Issue Tracker |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 {% for repo in repositories %}
 | {{ repo.name or "n/a" }} | {% if repo.homepage %}[{{ repo.homepage }}]({{ repo.homepage }}){% else %}n/a{% endif %} | {{ "✅" if repo.full_support else "❌" }} | {{ "✅" if repo.allows_self_hosting else "❌" }} | {{ repo.issue_tracker or "n/a" }} |
 {% endfor %}
