@@ -27,7 +27,6 @@ jobs:
         run: python generate.py
 
       - name: Commit rendered README.md
-        if: github.event.pull_request.head.repo.full_name == github.repository
         run: |
           if [[ -n "$(git status --porcelain README.md)" ]]; then
             git config user.name "github-actions[bot]"
