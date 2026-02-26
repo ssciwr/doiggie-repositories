@@ -14,7 +14,7 @@ by depending on this package.
 
 ## List of available data repository implementations
 
-| Name | Homepage | Full Support | Allows Self Hosting | Issue Tracker | User Warning |
+| Name | Homepage | Full Support | Allows Self Hosting | Issue Tracker |
 | --- | --- | --- | --- | --- | --- |
-| InvenioRDM | [https://inveniosoftware.org/products/rdm/](https://inveniosoftware.org/products/rdm/) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |  |
-| InvenioRDM | [https://inveniosoftware.org/products/rdm/](https://inveniosoftware.org/products/rdm/) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |  |
+| InvenioRDM | [https://inveniosoftware.org/products/rdm/](https://inveniosoftware.org/products/rdm/) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |
+| InvenioRDM | [https://inveniosoftware.org/products/rdm/](https://inveniosoftware.org/products/rdm/) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |
