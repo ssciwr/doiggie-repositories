@@ -106,9 +106,13 @@ def main() -> int:
         if isinstance(repo_type, type) and issubclass(repo_type, DataRepository)
     ]
     fields = _repository_field_names(DataRepository)
-    repository_dicts = [
-        _repository_to_dict(repo_type, fields) for repo_type in repositories
-    ]
+    repository_dicts = []
+    for repo_type in repositories:
+        repository_dict = _repository_to_dict(repo_type, fields)
+        if repository_dict.get("omit_from_repository_list"):
+            continue
+        repository_dicts.append(repository_dict)
+
     _render_template(template_path, output_path, repository_dicts, fields)
     return 0
 
