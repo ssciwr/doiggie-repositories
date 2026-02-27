@@ -17,3 +17,4 @@ by depending on this package.
 | Name | Homepage | Full Support | Allows Self Hosting | Issue Tracker |
 | --- | --- | --- | --- | --- |
 | InvenioRDM | [https://inveniosoftware.org/products/rdm/](https://inveniosoftware.org/products/rdm/) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |
+| Zenodo | [https://zenodo.org](https://zenodo.org) | ✅ | ✅ | https://github.com/ssciwr/pooch-invenio/issues |
