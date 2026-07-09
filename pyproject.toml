@@ -20,10 +20,10 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
 ]
 dependencies = [
-    "doiggie @ git+https://github.com/ssciwr/doiggie.git@main",
-    "doiggie-dataverse @ git+https://github.com/ssciwr/doiggie-dataverse.git@main",
-    "doiggie-figshare @ git+https://github.com/ssciwr/doiggie-figshare.git@main",
-    "doiggie-invenio @ git+https://github.com/ssciwr/doiggie-invenio.git@main",
+    "doiggie",
+    "doiggie-dataverse",
+    "doiggie-figshare",
+    "doiggie-invenio",
 ]
 
 [tool.setuptools]
