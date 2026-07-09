@@ -6,8 +6,8 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pooch_repositories"
-description = "Meta package to install all pooch-doi data repository implementations"
+name = "doiggie-repositories"
+description = "Meta package to install all doiggie data repository implementations"
 maintainers = [
     { name = "Dominic Kempf", email = "dominic.kempf@iwr.uni-heidelberg.de" },
 ]
@@ -20,10 +20,10 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
 ]
 dependencies = [
-    "pooch-doi @ git+https://github.com/ssciwr/pooch-doi.git@main",
-    "pooch-dataverse @ git+https://github.com/ssciwr/pooch-dataverse.git@main",
-    "pooch-figshare @ git+https://github.com/ssciwr/pooch-figshare.git@main",
-    "pooch-invenio @ git+https://github.com/ssciwr/pooch-invenio.git@main",
+    "doiggie @ git+https://github.com/ssciwr/doiggie.git@main",
+    "doiggie-dataverse @ git+https://github.com/ssciwr/doiggie-dataverse.git@main",
+    "doiggie-figshare @ git+https://github.com/ssciwr/doiggie-figshare.git@main",
+    "doiggie-invenio @ git+https://github.com/ssciwr/doiggie-invenio.git@main",
 ]
 
 [tool.setuptools]

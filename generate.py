@@ -11,11 +11,15 @@ from typing import Any
 
 def _discover_repository_classes() -> list[type]:
     """Discover repository implementations via package entry points."""
-    entry_points = importlib.metadata.entry_points(group="pooch.data_repositories")
-    if not entry_points:
-        # Legacy entry-point group used by older pooch-doi versions.
-        entry_points = importlib.metadata.entry_points(group="data_repositories")
-    return [entry_point.load() for entry_point in entry_points]
+    entry_point_groups = (
+        "doiggie.data_repositories",
+        "data_repositories",
+    )
+    for group in entry_point_groups:
+        entry_points = importlib.metadata.entry_points(group=group)
+        if entry_points:
+            return [entry_point.load() for entry_point in entry_points]
+    return []
 
 
 def _repository_field_names(data_repository_type: type) -> list[str]:
@@ -98,7 +102,7 @@ def main() -> int:
     template_path = project_root / "README.md.j2"
     output_path = project_root / "README.md"
 
-    from pooch_doi.repository import DataRepository
+    from doiggie.repository import DataRepository
 
     repositories = [
         repo_type
